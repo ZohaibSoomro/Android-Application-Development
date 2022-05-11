@@ -1,6 +1,7 @@
 package week6.task1;
 
 public class ATM {
+    String accountNumber;
     private String ownerName;
     private double amount;
     private int pin;
@@ -8,10 +9,11 @@ public class ATM {
     public ATM() {
     }
 
-    public ATM(String ownerName, double amount, int pin) {
+    public ATM(String ownerName, double amount, int pin, String accountNumber) {
         this.ownerName = ownerName;
         this.amount = amount;
         this.pin = pin;
+        this.accountNumber = accountNumber;
     }
 
     public double getAmount() {
