@@ -1,35 +1,40 @@
 package week6.task1;
 
+import week6.User;
+
 import java.util.Scanner;
 
 public class TestAtm {
     public static void main(String[] args) {
-        ATM myAtm = new ATM();
-        myAtm.setOwnerName("Zohaib");
-        myAtm.setAmount(10000);
 
-        ATM atm2 = new ATM("Hassan", 5000.0, 4568, "009867007900023");
-        ATM atm3 = new ATM("Ahmed", 25000.0, 8700, "009867897900023");
-        ATM atm4 = new ATM("Ali", 2000.0, 1234, "007267907900023");
-        ATM atm5 = new ATM("Subhan", 10200.0, 4138, "0071967007900023");
+//        ATM atm1 = new ATM("Zohaib", 10000, 98990, 1235);
+//        ATM atm2 = new ATM("Hassan", 5000.0, 98670, 4568);
+//        ATM atm3 = new ATM("Ahmed", 25000.0, 98678, 8700);
+//        ATM atm4 = new ATM("Ali", 2000.0, 72679, 1234);
+//        ATM atm5 = new ATM("Subhan", 10200.0, 96700, 4138);
+//
+//        switch (getValue()) {
+//            case 1:
+//                printAtmData(atm1);
+//                break;
+//            case 2:
+//                printAtmData(atm2);
+//                break;
+//            case 3:
+//                printAtmData(atm3);
+//                break;
+//            case 4:
+//                printAtmData(atm4);
+//                break;
+//            case 5:
+//                printAtmData(atm5);
+//                break;
+//            default:
+//                System.out.println("Invalid input!");
+//        }
+        User user = new User("Zohaib", "45104868689016", 20);
+        ATM atm = new ATM("Zohaib", 10000, 98990, 1235, user);
 
-        switch (getValue()) {
-            case 1:
-                printAtm(myAtm);
-                break;
-            case 2:
-                printAtm(atm2);
-                break;
-            case 3:
-                printAtm(atm3);
-                break;
-            case 4:
-                printAtm(atm4);
-                break;
-            case 5:
-                printAtm(atm5);
-                break;
-        }
     }
 
     public static int getValue() {
@@ -39,9 +44,9 @@ public class TestAtm {
     }
 
 
-    public static void printAtm(ATM myAtm) {
-        System.out.println(myAtm.getOwnerName());
-        System.out.println(myAtm.getAmount());
+    public static void printAtmData(ATM atm) {
+        System.out.println(atm.getOwnerName());
+        System.out.println(atm.getAmount());
         System.out.println("-------------");
     }
 }
