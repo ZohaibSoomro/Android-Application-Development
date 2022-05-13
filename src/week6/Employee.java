@@ -10,19 +10,19 @@ public class Employee {
     private char gender;
     private int contactNumber;
 
-    public Employee() {
-    }
-
-    public Employee(int id, String name, double salary, Department departmentId, String jobId, Address address, char gender, int contactNumber) {
-        this.id = id;
-        this.name = name;
-        this.salary = salary;
-        this.department = departmentId;
-        this.jobId = jobId;
-        this.address = address;
-        this.gender = gender;
-        this.contactNumber = contactNumber;
-    }
+//    public Employee() {
+//    }
+//
+//    public Employee(int id, String name, double salary, Department departmentId, String jobId, Address address, char gender, int contactNumber) {
+//        this.id = id;
+//        this.name = name;
+//        this.salary = salary;
+//        this.department = departmentId;
+//        this.jobId = jobId;
+//        this.address = address;
+//        this.gender = gender;
+//        this.contactNumber = contactNumber;
+//    }
 
     public int getId() {
         return id;
