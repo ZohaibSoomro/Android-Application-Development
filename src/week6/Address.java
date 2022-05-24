@@ -4,13 +4,13 @@ public class Address {
     private String cityName;
     private String stateName;
 
-    public Address() {
-    }
-
-    public Address(String cityName, String stateName) {
-        this.cityName = cityName;
-        this.stateName = stateName;
-    }
+//    public Address() {
+//    }
+//
+//    public Address(String cityName, String stateName) {
+//        this.cityName = cityName;
+//        this.stateName = stateName;
+//    }
 
     public String getCityName() {
         return cityName;

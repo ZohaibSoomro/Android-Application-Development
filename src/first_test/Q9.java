@@ -1,6 +1,6 @@
 package first_test;
 
-public class Q2 {
+public class Q9 {
     public static void main(String[] args) {
         int max;
         int min = 10;

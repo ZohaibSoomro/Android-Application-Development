@@ -1,10 +1,7 @@
 package week7.task1;
 
-public class TestPerson {
+public class TestDemo {
     public static void main(String[] args) {
-        Employee emp = new Employee("Hassan");
-        Faculty faculty = new Faculty("Javed");
-
 
         Person person = new Person();
         person.setName("Ahmed");

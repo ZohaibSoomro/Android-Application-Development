@@ -5,14 +5,14 @@ public class Department {
     private String departmentName;
     private String managerName;
 
-    public Department() {
-    }
-
-    public Department(int departmentId, String departmentName, String managerName) {
-        this.departmentId = departmentId;
-        this.departmentName = departmentName;
-        this.managerName = managerName;
-    }
+//    public Department() {
+//    }
+//
+//    public Department(int departmentId, String departmentName, String managerName) {
+//        this.departmentId = departmentId;
+//        this.departmentName = departmentName;
+//        this.managerName = managerName;
+//    }
 
     public int getDepartmentId() {
         return departmentId;
