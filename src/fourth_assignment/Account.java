@@ -1,24 +1,34 @@
 package fourth_assignment;
 
 public class Account {
-    private String accountName;
+    private String title;
     private String accountNumber;
     private double balance;
     private int pin;
+    private UserList user;
 
-    public Account(String accountName, String accountNumber, double balance, int pin) {
-        this.accountName = accountName;
+    public Account(String title, String accountNumber, double balance, int pin, UserList user) {
+        this.title = title;
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.pin = pin;
+        this.user = user;
     }
 
-    public String getAccountName() {
-        return accountName;
+    public UserList getUser() {
+        return user;
     }
 
-    public void setAccountName(String accountName) {
-        this.accountName = accountName;
+    public void setUser(UserList user) {
+        this.user = user;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAccountNumber() {
